@@ -14,51 +14,51 @@ import {
 const ambassadorsData = [
   {
     id: "1",
-    name: "Ayesha Khan",
-    university: "LUMS",
-    program: "Business Administration",
-    bio: "Passionate about helping students navigate the complex world of business education. Currently in my final year at LUMS.",
-    specialties: ["Business", "Admissions", "Career Guidance"]
+    name: "Lorem Ipsum",
+    university: "Dolor Sit",
+    program: "Amet Consectetur",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+    specialties: ["Lorem Ipsum", "Dolor Sit", "Amet Consectetur"]
   },
   {
     id: "2",
-    name: "Ahmed Ali",
-    university: "IBA Karachi",
-    program: "Computer Science",
-    bio: "Tech enthusiast and coding mentor. Love sharing my experience about the tech industry and university life.",
-    specialties: ["Computer Science", "Programming", "Tech Industry"]
+    name: "Dolor Sit",
+    university: "Amet Consectetur",
+    program: "Adipiscing Elit",
+    bio: "Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    specialties: ["Adipiscing Elit", "Sed Do Eiusmod", "Tempor Incididunt"]
   },
   {
     id: "3",
-    name: "Fatima Sheikh",
-    university: "NUST",
-    program: "Engineering",
-    bio: "Engineering student with a passion for innovation. Happy to guide students through the engineering admission process.",
-    specialties: ["Engineering", "Innovation", "Research"]
+    name: "Amet Consectetur",
+    university: "Adipiscing Elit",
+    program: "Sed Do Eiusmod",
+    bio: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+    specialties: ["Sed Do Eiusmod", "Tempor Incididunt", "Ut Labore"]
   },
   {
     id: "4",
-    name: "Hassan Raza",
-    university: "FAST",
-    program: "Software Engineering",
-    bio: "Software engineer and startup enthusiast. Experienced in both academic and industry perspectives.",
-    specialties: ["Software Engineering", "Startups", "Industry Experience"]
+    name: "Adipiscing Elit",
+    university: "Sed Do Eiusmod",
+    program: "Tempor Incididunt",
+    bio: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.",
+    specialties: ["Tempor Incididunt", "Ut Labore", "Dolore Magna"]
   },
   {
     id: "5",
-    name: "Sara Ahmed",
-    university: "GIKI",
-    program: "Electrical Engineering",
-    bio: "Electrical engineering student with a focus on renewable energy. Passionate about sustainable technology.",
-    specialties: ["Electrical Engineering", "Renewable Energy", "Sustainability"]
+    name: "Sed Do Eiusmod",
+    university: "Tempor Incididunt",
+    program: "Ut Labore",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    specialties: ["Ut Labore", "Dolore Magna", "Aliqua Ut"]
   },
   {
     id: "6",
-    name: "Omar Khan",
-    university: "Habib University",
-    program: "Liberal Arts",
-    bio: "Liberal arts student with a love for humanities and social sciences. Advocate for interdisciplinary education.",
-    specialties: ["Liberal Arts", "Humanities", "Interdisciplinary Studies"]
+    name: "Tempor Incididunt",
+    university: "Ut Labore",
+    program: "Dolore Magna",
+    bio: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.",
+    specialties: ["Dolore Magna", "Aliqua Ut", "Enim Ad"]
   }
 ]
 
@@ -75,85 +75,84 @@ export default function AmbassadorsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-light pt-20">
       <Dialog open={isMessageInfoModalOpen} onOpenChange={setIsMessageInfoModalOpen}>
-        <DialogContent>
+        <DialogContent className="border-primary/20">
           <DialogHeader>
-            <DialogTitle>Coming Soon!</DialogTitle>
+            <DialogTitle className="text-primary">Coming Soon!</DialogTitle>
             <DialogDescription>
-              The messaging feature is currently under development. Stay tuned for updates!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
             </DialogDescription>
           </DialogHeader>
-          <Button onClick={() => setIsMessageInfoModalOpen(false)}>
+          <Button onClick={() => setIsMessageInfoModalOpen(false)} className="bg-gradient-primary hover:bg-gradient-secondary text-white">
             Got it
           </Button>
         </DialogContent>
       </Dialog>
 
       <Dialog open={isApplyInfoModalOpen} onOpenChange={setIsApplyInfoModalOpen}>
-        <DialogContent>
+        <DialogContent className="border-primary/20">
           <DialogHeader>
-            <DialogTitle>Applications Coming Soon!</DialogTitle>
+            <DialogTitle className="text-primary">Applications Coming Soon!</DialogTitle>
             <DialogDescription>
-              We're currently not accepting new applications in our ambassador program. Please check back later!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
             </DialogDescription>
           </DialogHeader>
-          <Button onClick={() => setIsApplyInfoModalOpen(false)}>
+          <Button onClick={() => setIsApplyInfoModalOpen(false)} className="bg-gradient-primary hover:bg-gradient-secondary text-white">
             Got it
           </Button>
         </DialogContent>
       </Dialog>
 
-      <div className="container mx-auto px-4 py-6 sm:py-8">
+      <div className="container mx-auto px-4 py-8">
         {/* Page Header */}
-        <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-4xl font-bold text-primary mb-2 sm:mb-4">Student Ambassadors</h1>
-          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Connect with current students and alumni from your target universities. Get firsthand insights
-            and guidance for your academic journey.
+        <div className="text-center mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gradient-primary mb-4">Lorem Ipsum Ambassadors</h1>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
-          <Card>
-            <CardContent className="p-4 sm:p-6 text-center">
-              <Users className="w-6 h-6 sm:w-8 sm:h-8 text-primary mx-auto mb-2" />
-              <div className="text-xl sm:text-2xl font-bold text-gray-900">{ambassadorsData.length}+</div>
-              <div className="text-xs sm:text-sm text-gray-600">Active Ambassadors</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+          <Card className="bg-white border-primary/20">
+            <CardContent className="p-6 text-center">
+              <Users className="w-8 h-8 text-primary mx-auto mb-2" />
+              <div className="text-2xl font-bold text-gray-900">{ambassadorsData.length}+</div>
+              <div className="text-sm text-gray-600">Active Ambassadors</div>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="p-4 sm:p-6 text-center">
-              <Award className="w-6 h-6 sm:w-8 sm:h-8 text-primary mx-auto mb-2" />
-              <div className="text-xl sm:text-2xl font-bold text-gray-900">6+</div>
-              <div className="text-xs sm:text-sm text-gray-600">Universities Covered</div>
+          <Card className="bg-white border-primary/20">
+            <CardContent className="p-6 text-center">
+              <Award className="w-8 h-8 text-primary mx-auto mb-2" />
+              <div className="text-2xl font-bold text-gray-900">6+</div>
+              <div className="text-sm text-gray-600">Lorem Ipsum Covered</div>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="p-4 sm:p-6 text-center">
-              <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-primary mx-auto mb-2" />
-              <div className="text-xl sm:text-2xl font-bold text-gray-900">100+</div>
-              <div className="text-xs sm:text-sm text-gray-600">Students Helped</div>
+          <Card className="bg-white border-primary/20">
+            <CardContent className="p-6 text-center">
+              <MessageCircle className="w-8 h-8 text-primary mx-auto mb-2" />
+              <div className="text-2xl font-bold text-gray-900">100+</div>
+              <div className="text-sm text-gray-600">Lorem Ipsum Helped</div>
             </CardContent>
           </Card>
         </div>
 
         {/* Ambassador Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch mb-12">
           {ambassadorsData.map((ambassador) => (
-            <Card key={ambassador.id} className="border-primary-light flex flex-col">
-              <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
-                {/* Grey placeholder instead of image */}
-                <div className="aspect-square w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gray-300 flex items-center justify-center">
-                  <Users className="w-8 h-8 sm:w-12 sm:h-12 text-gray-500" />
+            <Card key={ambassador.id} className="card-modern group">
+              <CardContent className="p-6 flex flex-col flex-1">
+                {/* Avatar placeholder */}
+                <div className="aspect-square w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 rounded-full bg-gradient-primary flex items-center justify-center">
+                  <Users className="w-8 h-8 sm:w-12 sm:h-12 text-white" />
                 </div>
-                <h3 className="text-base sm:text-lg font-semibold text-primary mb-1 text-center">{ambassador.name}</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-2 text-center">{ambassador.university} • {ambassador.program}</p>
-                <p className="text-xs sm:text-sm text-gray-500 mb-3">{ambassador.bio}</p>
+                <h3 className="text-lg font-semibold text-primary mb-1 text-center">{ambassador.name}</h3>
+                <p className="text-sm text-gray-600 mb-2 text-center">{ambassador.university} • {ambassador.program}</p>
+                <p className="text-xs text-gray-500 mb-3">{ambassador.bio}</p>
                 <div className="flex flex-wrap gap-2 justify-center mb-4">
                   {ambassador.specialties.map((specialty, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-xs">
+                    <Badge key={idx} variant="secondary" className="text-xs bg-primary-light text-primary">
                       {specialty}
                     </Badge>
                   ))}
@@ -161,7 +160,7 @@ export default function AmbassadorsPage() {
                 <div className="flex space-x-2 mt-auto">
                   <Button
                     size="sm"
-                    className="flex-1 bg-primary hover:bg-primary-dark text-sm"
+                    className="flex-1 bg-gradient-primary hover:bg-gradient-secondary text-white text-sm shadow-glow"
                     onClick={openMessageDialog}
                   >
                     <MessageCircle className="w-4 h-4 mr-1" />
@@ -174,17 +173,17 @@ export default function AmbassadorsPage() {
         </div>
 
         {/* CTA Section */}
-        <Card className="mt-8 sm:mt-12 bg-primary text-white">
-          <CardContent className="p-6 sm:p-8 text-center">
-            <Award className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4" />
-            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Become an Ambassador</h3>
-            <p className="text-sm sm:text-base text-primary-light mb-4 sm:mb-6">
-              Share your university experience and help guide future students
+        <Card className="bg-gradient-primary text-white border-0 shadow-lg">
+          <CardContent className="p-8 text-center">
+            <Award className="w-12 h-12 mx-auto mb-4" />
+            <h3 className="text-2xl font-bold mb-4">Become an Ambassador</h3>
+            <p className="text-primary-light mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
             <Button
               size="lg"
               variant="secondary"
-              className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100"
+              className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 shadow-lg"
               onClick={handleApplyClick}
             >
               Apply Now
