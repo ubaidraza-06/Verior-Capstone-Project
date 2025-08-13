@@ -1,6 +1,6 @@
-# GuideGrad
+# Campus Expert
 
-GuideGrad is a React-based web application designed to provide a centralized platform for students to explore universities, connect with ambassadors, and access detailed information about educational opportunities.  
+Campus Expert is a React-based web application designed to provide a centralized platform for students to explore universities, connect with ambassadors, and access detailed information about educational opportunities.  
 
 The application follows a modular architecture with reusable UI components, an organized API layer, and separate pages for each feature.
 
