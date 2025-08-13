@@ -13,12 +13,9 @@ src/
 ├── components/       # Reusable UI and layout components
 │   ├── ui/           # Shared UI elements (badge, button, card, dialog)
 │   ├── FooterLogo.jsx
-│   ├── Logo.jsx
 │   └── Navbar.jsx
 │
-├── lib/              # Utility and API integration files
-│   ├── api/          # API calls for ambassadors and universities
-│   ├── firebase.js   # Firebase configuration
+├── lib/              # Utility files
 │   └── utils.js      # Helper functions
 │
 ├── pages/            # Application pages
@@ -40,10 +37,8 @@ src/
 - **Universities Page** – Displays a list of universities with filtering and details.
 - **University Detail Page** – In-depth information about a specific university.
 - **Ambassadors Page** – List of student ambassadors for direct contact.
-- **About Page** – Details about GuideGrad’s mission and purpose.
+- **About Page** – Details about Campus Expert’s mission and purpose.
 - **Reusable UI Components** – Cards, buttons, badges, and dialogs for consistent styling.
-- **Firebase Integration** – Backend for data storage, authentication, and hosting.
-- **API Layer** – Organized fetch requests for universities and ambassadors data.
 
 ---
 
@@ -51,36 +46,12 @@ src/
 
 - **Frontend:** React (with JSX components)
 - **Styling:** CSS + Custom UI components
-- **Backend:** Firebase
-- **API Handling:** JavaScript fetch/axios (via `lib/api`)
 - **Package Management:** npm
 
 ---
 
 ###  Install dependencies
 npm install
-
-
-###  Set up Firebase
-- Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
-- Enable Authentication, Firestore Database, and Hosting (if needed)
-- Copy your Firebase config and paste it into `src/lib/firebase.js`
-
-Example:
-```javascript
-// src/lib/firebase.js
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
-};
-
-export const app = initializeApp(firebaseConfig);
 
 
 ###  Start the development server
