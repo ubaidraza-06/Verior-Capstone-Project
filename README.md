@@ -7,7 +7,7 @@ The application follows a modular architecture with reusable UI components, an o
 ---
 
 ## Project Structure
-
+```
 src/
 │
 ├── components/       # Reusable UI and layout components
@@ -31,7 +31,7 @@ src/
 ├── App.jsx           # Root component
 ├── index.css         # Global styles
 └── main.jsx          # App entry point
-
+```
 ---
 
 ## Key Features
